@@ -1,16 +1,10 @@
 plugins {
     id 'java'
-    id 'application'
     id "io.freefair.lombok" version "8.4"
 }
 
 group = 'org.example'
 version = '1.0-SNAPSHOT'
-
-application {
-    mainClass = 'org.example.Main'
-    applicationDefaultJvmArgs = ["--add-opens", "java.base/java.time=ALL-UNNAMED"]
-}
 
 test {
     jvmArgs = ["--add-opens", "java.base/java.time=ALL-UNNAMED"]
